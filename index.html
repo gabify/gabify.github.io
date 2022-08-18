@@ -3,15 +3,88 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
         <title>Gabify Home</title>
     </head>
     <body>
-        <h1 class="display-3 text-center">Gabify Homepage</h1>
-        <div class="container-fluid justify-content-center">
-            <a href="Block-Market/" class="btn btn-primary">Blocks Market</a>
-            <a href="Isabel-Gallery/" class="btn btn-primary">Isabel's Gallery</a>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <!--Navigation goes here-->
+        <nav class="navbar navbar-expand-md navbar-light mx-3">
+            <div class="container-lg">
+                <a href="#header" class="navbar-brand">
+                    <span class="lead fw-bold fs-3">Gabify</span>
+                </a>
+                <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse px-3" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Connect</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--Header goes here-->
+        <section id="header" class="mb-5">
+            <div class="container-fluid my-5 pt-3 px-4">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-5 d-none d-md-block">
+                        <img src="assets/profile.jpg" alt="my profile" class="img-fluid rounded-circle w-55 ps-5">
+                    </div>
+                    <div class="colsm-8 col-md-7 text-center text-md-start">
+                        <p class="lead fs-5 mb-0">Hi There!</p>
+                        <h1 class="display-5 text-primary fw-bold mb-0">I'm Ivan Gabriel Talaoc</h1>
+                        <small class="text-muted fw-lighter">Software Developer | Web Developer | Graphic Artist | Computer Technician</small>
+                        <p class="lead mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae alias velit esse quidem ducimus dolorem non est totam accusamus eos!</p>
+                        <a href="#about" class="btn btn-primary mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Projects goes here-->
+        <section id="projects" class="bg-light mt-5">
+            <div class="container lg">
+                <div class="text-center mt-5 py-3">
+                    <h3 class="fw-bold mb-0">My Work</h3>
+                    <p class="fs-6 fw-lighter text-muted">Here are some of my personal projects.</p>
+                </div>
+                <div class="text-center fs-6 mt-3 py-2">
+                    <h4>Logos</h4>
+                    <div class="row justify-content-center">
+                        <div class="col-7 col-md-6 card border-0 m-2">
+                            <div class="card-body">
+                                <h5 class="fw-bold card-title">RRIBn Logo</h5>
+                                <p class="lead text-muted card-text">401st Ready Reserve Infantry Battalion Bravo Company Logo</p>
+                            </div>
+                        </div>
+                        <div class="col-7 col-md-6 card border-0 m-2">
+                            <div class="card-body">
+                                <h5 class="fw-bold card-title">BSUBROTCU Logo</h5>
+                                <p class="lead text-muted card-text">Batangas State University Balayan ROTC Unit Logo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
     </body>
 </html>
