@@ -13,7 +13,10 @@
         <nav class="navbar navbar-expand-md navbar-light mx-3">
             <div class="container-lg">
                 <a href="#header" class="navbar-brand">
-                    <span class="lead fw-bold fs-3">Gabify</span>
+                    <span class="lead fw-bold fs-3">
+                        Gabify
+                        <i class="bi bi-code-square"></i>
+                    </span>
                 </a>
                 <button class="navbar-toggler" type="button"
                 data-bs-toggle="collapse" data-bs-target="#main-nav"
@@ -198,7 +201,12 @@
                                     </div>
                                     <div class="p-2 mt-3">
                                         <small class="fw-bold text-muted mb-0">Social Links:</small>
-                                        
+                                        <div class="row p-2 mt-2 justify-content-center g-2">
+                                            <a href="#" class="col-6 col-md-4 mx-1 btn btn-secondary fw-light"><i class="bi bi-facebook"></i>Facebook</a>
+                                            <a href="#" class="col-6 col-md-4 mx-1 btn btn-secondary fw-light"><i class="bi bi-instagram"></i>Instagram</a>
+                                            <a href="#" class="col-6 col-md-4 mx-1 btn btn-secondary fw-light"><i class="bi bi-github"></i>Github</a>
+                                            <a href="#" class="col-6 col-md-4 mx-1 btn btn-secondary fw-light"><i class="bi bi-linkedin"></i>Linkedin</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -207,6 +215,34 @@
                 </div>
             </div>
         </section>
+
+        <!--connect goes here-->
+        <section id="connect" class="bg-light">
+            <div class="container-lg py-4">
+                <div class="text-center">
+                    <h3 class="fw-bold mb-0">Stay Connected</h3>
+                    <p class="fs-6 fw-lighter text-muted">Any inquiry? You can reach me here</p>
+                </div>
+                <form class="border">
+                    <div class="row px-2 py-5 mx-2 justify-content-center">
+                        <div class="col-md-8 mb-3">
+                            <label for="email" class="form-label fw-light fs-6">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="eg. juan@example.com">
+                        </div>
+                        <div class="col-md-8 my-2 form-floating">
+                            <textarea class="form-control" id="inquiry" rows="6" placeholder="Any inquiry..."></textarea>
+                            <label for="inquiry" class="form-label fw-light fs-6 mx-2">Any Inquiry...</label>
+                            <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                        </div>
+                    </div>  
+                </form>
+            </div>
+        </section>
+        <footer class="mx-2 my-3 py-2">
+            <p class="fs-6 fw-light text-center">This is a static website. Soon it will be published on other server.</p>
+            <small class="text-muted me-2">&copy;2022</small>
+            <small class="text-muted"><a href="#">Terms & Condition</a></small>
+        </footer>
 
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
     </body>
